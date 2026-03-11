@@ -1,9 +1,10 @@
 import uuid
 from dataclasses import dataclass
 
+from basemodel import BaseModel
+
 @dataclass
-class User:
-    uuid: uuid.UUID
+class User(BaseModel):
     username: str
     email: str
     password_hash: str
@@ -11,8 +12,7 @@ class User:
     is_active: bool
 
 @dataclass
-class UserProfile:
-    uuid: uuid.UUID
+class UserProfile(BaseModel):
     first_name: str
     middle_name: str
     last_name: str
@@ -20,6 +20,8 @@ class UserProfile:
     job_title: str
     bank_number: str
     contact_number: str
+    pay_basis: str
+    base_rate: float
 
 
 
