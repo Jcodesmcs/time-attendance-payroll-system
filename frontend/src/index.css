@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .sidebar-icon {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200;
+  }
+  
+  .sidebar-icon-active {
+    @apply bg-retail-red text-white;
+  }
+  
+  .sidebar-icon-inactive {
+    @apply text-gray-700 hover:bg-gray-100;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .badge {
+    @apply px-2 py-1 text-xs font-semibold rounded-full;
+  }
+  
+  .badge-announcement {
+    @apply bg-retail-red text-white;
+  }
+}
