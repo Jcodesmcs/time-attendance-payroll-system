@@ -1,7 +1,7 @@
 import uuid
 from dataclasses import dataclass
 
-from basemodel import BaseModel
+from base_model import BaseModel
 
 @dataclass
 class User(BaseModel):
