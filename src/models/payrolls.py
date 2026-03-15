@@ -1,11 +1,10 @@
 from dataclasses import dataclass
 import uuid
 import datetime
+from base_model import BaseModel
 
 @dataclass
-class Payroll:
-    payroll_id: uuid.UUID
-    user_id: uuid.UUID
+class Payroll(BaseModel):
     period_start: datetime.date
     period_end: datetime.date
     regular_pay: float
