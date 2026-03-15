@@ -1,0 +1,7 @@
+firebase_admin
+Pyrebase
+bcrypt
+fastapi
+Pillow
+python_dotenv
+setuptools
